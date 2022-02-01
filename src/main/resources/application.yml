@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: postgres
+    initialization-mode: always
+    url: jdbc:postgresql://localhost:33300/fap
+    password: Stonebraker
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+    hibernate:
+      ddl-auto: update
